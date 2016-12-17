@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body ng-app="todo">
+
+	<div ng-controller="todoController">
+	<h3>{{title}}</h3>
+	<h4><b>{{note}}</b></h4>
+	<ul>
+		<li ng-repeat="task in data.tasks" ng-click="data.delete($index)"><span>{{task.description}}</span></li>
+		<li>{{data.add}}</li>
+	</ul>
+	<input type="text" ng-model="data.add"  ng-keypress="data.keydown($event)">
+	
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
