@@ -1,0 +1,23 @@
+body{
+	text-align: center;
+}
+ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+li{
+	background-color: #E0DFE0;
+	width: 100%;
+	max-width: 500px;
+	min-height: 30px;
+	line-height: 30px;
+	margin-bottom: 2px;
+	cursor: pointer;
+	transition: all 0.1s linear;
+}
+li:hover{
+	transform : scale(1.1);
+}
