@@ -11,10 +11,11 @@
 	<h3>{{title}}</h3>
 	<h4><b>{{note}}</b></h4>
 	<ul>
-		<li ng-repeat="task in data.tasks" ng-click="data.delete($index)"><span>{{task.description}}</span></li>
+		<li ng-repeat="task in data.tasks" ng-click="data.delete($index)" title="delete"><span>{{task.description}}</span></li>
 		<li>{{data.add}}</li>
+		<input type="text" ng-model="data.add"  ng-keypress="data.keydown($event)">
 	</ul>
-	<input type="text" ng-model="data.add"  ng-keypress="data.keydown($event)">
+	
 	
 	</div>
 

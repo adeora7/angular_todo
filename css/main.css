@@ -1,5 +1,7 @@
 body{
 	text-align: center;
+	background-image: url(../images/bg.jpg);
+	background-repeat: repeat;
 }
 ul{
 	list-style: none;
@@ -17,7 +19,19 @@ li{
 	margin-bottom: 2px;
 	cursor: pointer;
 	transition: all 0.1s linear;
+	font-family: "Courier New", Courier, monospace;
+}
+input[type="text"]{
+	width: 100%;
+	max-width: 400px;
+	height:30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:gray;
 }
 li:hover{
 	transform : scale(1.1);
+}
+h3, h4{
+	color: white;
 }
